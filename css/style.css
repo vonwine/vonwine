@@ -682,7 +682,7 @@ section {
   line-height: 7.5rem;
 }
 
-.reviews .slide p {
+.clientes .slide p {
   padding: 1.5rem;
   background: #fff;
   position: relative;
@@ -692,7 +692,7 @@ section {
   line-height: 1.5;
 }
 
-.reviews .slide p::before {
+.clientes .slide p::before {
   content: '';
   position: absolute;
   bottom: -1rem;
@@ -704,7 +704,7 @@ section {
           transform: rotate(45deg);
 }
 
-.reviews .slide .user {
+.clientes .slide .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,23 +715,23 @@ section {
 
 }
 
-.reviews .slide .user img {
+.clientes .slide .user img {
   height: 7rem;
   width: 7rem;
   border-radius: 50px;
 }
 
-.reviews .slide .user h3 {
+.clientes .slide .user h3 {
   font-size: 2rem;
   color: var(--black);
   text-transform: capitalize;
 }
 
-.reviews .slide .user .stars {
+.clientes .slide .user .stars {
   padding-top: .5rem;
 }
 
-.reviews .slide .user .stars i {
+.clientes .slide .user .stars i {
   font-size: 1.4rem;
   color: var(--yellow);
 }
@@ -1091,4 +1091,24 @@ section {
   .about .row .content h3 {
     font-size: 2.5rem;
   }
+}
+
+
+@media (max-width: 768px) {
+
+    .clientes .swiper-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem;
+        transform: none !important;        /* evita que Swiper lo mueva */
+    }
+
+    .clientes .swiper-slide {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .clientes .swiper {
+        overflow: visible !important;       /* para que no recorte contenido */
+    }
 }

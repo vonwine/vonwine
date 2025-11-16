@@ -45,22 +45,30 @@ var swiper = new Swiper(".home-slider", {
    },
 });
 
-var swiper = new Swiper(".reviews-slider", {
-   loop:true,
+var swiper = new Swiper(".clientes-slider", {
    grabCursor:true,
    spaceBetween: 20,
+
    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        loop: false      // 👈 evita duplicados en móvil
+      },
       640: {
         slidesPerView: 1,
+        loop: true
       },
       768: {
         slidesPerView: 2,
+        loop: true
       },
       991: {
         slidesPerView: 3,
+        loop: true
       },
    },
 });
+
 
 var swiper = new Swiper(".repuestos-slider", {
    loop:true,
